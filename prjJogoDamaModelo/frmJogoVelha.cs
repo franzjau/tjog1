@@ -105,6 +105,9 @@ namespace prjJogoDamaModelo
             }
 
             _Jogador = "Branco";
+
+            _PreencheListaValida();
+
         }
 
         private void pPecaBranca(int _PosicaoX, int _PosicaoY)
@@ -166,7 +169,7 @@ namespace prjJogoDamaModelo
 
                 if (!_Jogador.Equals(_lstTabuleiro[_NroCasa]))
                 {
-                    MessageBox.Show("Vai Procurar sua Laia");
+                    MessageBox.Show("Não é sua vez de jogar !!!");
                     return;
                 }
 
@@ -176,9 +179,9 @@ namespace prjJogoDamaModelo
                 _OrigemCasaX = _CasaX;
                 _OrigemCasaY = _CasaY;
 
-                            if (!_Jogador.Equals(_lstTabuleiro[_NroCasa]))
+            if (!_Jogador.Equals(_lstTabuleiro[_NroCasa]))
             {
-                MessageBox.Show("Vai Procurar sua Laia");
+                MessageBox.Show("Não é sua vez de Jogar !!!");
                 return;
             }
             }
@@ -225,7 +228,7 @@ namespace prjJogoDamaModelo
                     {
 
                         //Da a Mensagem
-                        MessageBox.Show("Buraco Já Preenchido !!!");
+                        MessageBox.Show("Já existe uma peça nessa casa");
 
                         //Verifica qual é a cor que eu selecionei
                         if ("Branco".Equals(_lstTabuleiro[_OrigemNrCasa]))
@@ -244,6 +247,25 @@ namespace prjJogoDamaModelo
                     }
                     else
                     {
+
+                        if ("Preto".Equals(_Jogador))
+                        {
+                            if ((_lstPretaDireitoValida[_OrigemNrCasa] != _NroCasa) && (_lstPretaEsquerdoValida[_OrigemNrCasa] != _NroCasa))
+                            {
+                                MessageBox.Show("Essa jogada não é válida");
+                                return;
+                            }
+                        }
+                        else
+                        {
+                            if ((_lstBrancaDireitoValida[_OrigemNrCasa] != _NroCasa) && (_lstBrancaEsquerdoValida[_OrigemNrCasa] != _NroCasa))
+                            {
+                                MessageBox.Show("Essa jogada não é válida");
+                                return;
+                            }
+
+                        }
+
                         //Se a casa selecionada não tiver peça.
                         //Desenha a cor na peça na nova casa
 
@@ -331,6 +353,7 @@ namespace prjJogoDamaModelo
 
         private void _PreencheListaValida()
         {
+
             //preenchendo brancos valisods esquerdos
             _lstBrancaEsquerdoValida.Add(4);//0
             _lstBrancaEsquerdoValida.Add(5);//1
