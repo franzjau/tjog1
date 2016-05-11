@@ -1,0 +1,10 @@
+C:\prjJogoDamaModelo\prjJogoDamaModelo\bin\Debug\prjJogoDamaModelo.exe.config
+C:\prjJogoDamaModelo\prjJogoDamaModelo\bin\Debug\prjJogoDamaModelo.exe
+C:\prjJogoDamaModelo\prjJogoDamaModelo\bin\Debug\prjJogoDamaModelo.pdb
+C:\prjJogoDamaModelo\prjJogoDamaModelo\obj\Debug\prjJogoDamaModelo.csprojResolveAssemblyReference.cache
+C:\prjJogoDamaModelo\prjJogoDamaModelo\obj\Debug\prjJogoDamaModelo.frmJogoVelha.resources
+C:\prjJogoDamaModelo\prjJogoDamaModelo\obj\Debug\prjJogoDamaModelo.frmDetalhe.resources
+C:\prjJogoDamaModelo\prjJogoDamaModelo\obj\Debug\prjJogoDamaModelo.Properties.Resources.resources
+C:\prjJogoDamaModelo\prjJogoDamaModelo\obj\Debug\prjJogoDamaModelo.csproj.GenerateResource.Cache
+C:\prjJogoDamaModelo\prjJogoDamaModelo\obj\Debug\prjJogoDamaModelo.exe
+C:\prjJogoDamaModelo\prjJogoDamaModelo\obj\Debug\prjJogoDamaModelo.pdb
